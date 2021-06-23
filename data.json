@@ -1,0 +1,1420 @@
+{
+  "name": "ss21",
+  "children": [
+    {
+      "name": "Communication Design B.A",
+      "children": [
+        {
+          "id": "60d2ef40cb05b",
+          "name": "Janina Wesnigk",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40cc430",
+          "name": "Michelle Aylward",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40cd465",
+          "name": "Milena Bassen",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40ce76f",
+          "name": "Carlena Burk",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40cf80a",
+          "name": "Laurizete Alves da Silva",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d0888",
+          "name": "Maria Justina Boselli",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d17b2",
+          "name": "Alina Cieslinski",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d274d",
+          "name": "Demirel Canel",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d371f",
+          "name": "Christopher Enders",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d462f",
+          "name": "Auxiliadora Engono Eyegue",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d534c",
+          "name": "Camila Ferraz Dutzig",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d675c",
+          "name": "Emma Joutj\u00e4rvi",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d79e6",
+          "name": "Steven Letzsch",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d8ae7",
+          "name": "Gina Maa\u00df",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40d9c38",
+          "name": "Ricarda Manzischke",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40dacaa",
+          "name": "Jelena M\u00f6nch",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40dbe52",
+          "name": "Sophie Melina Ortner",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40dd347",
+          "name": "Michelle Moser",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40de12e",
+          "name": "Vanessa Petschauer",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40def25",
+          "name": "Isabelle Pryzwanski",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e00d6",
+          "name": "Huseynagha Rasulov",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e1204",
+          "name": "Fabian Rott",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e1fdd",
+          "name": "Marcus Anders Emanuel Ryberg",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e2ebc",
+          "name": "Aya Sakamoto",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e3fef",
+          "name": "Caroline Schadendorf",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e5148",
+          "name": "Julia Schulz",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e61b2",
+          "name": "Hannah Staff",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e6fdc",
+          "name": "Alexis Stylianou",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e8193",
+          "name": "Greta Tanneberger",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40e9647",
+          "name": "Laura Thieme",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40ea856",
+          "name": "Tamas Tschaidse",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40eb9d8",
+          "name": "Nina Eloise Zeisler",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40ec8cd",
+          "name": "Timo Zucker",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40ef7f4",
+          "name": "Lilli Minhoff",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40f1096",
+          "name": "Rob Rothenpieler",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40f254e",
+          "name": "Lennart Sack",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef40f3aa2",
+          "name": "Michelle Wars\u00f6nke",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef4100c9c",
+          "name": "Ioannis Telioridis",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef4101efb",
+          "name": "Annika Urbanski",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef4102f6c",
+          "name": "Aina Casals Frempong",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef4104094",
+          "name": "Mey Plagmann & Maguli Pajung",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef41054d8",
+          "name": "Laura Diezler",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef4106d58",
+          "name": "Nikol Gaspar",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef41080a1",
+          "name": "Lieyijia Du",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef4109ae1",
+          "name": "Nikolaus Fuchs",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef410b154",
+          "name": "Eric Dsane",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef410ca53",
+          "name": "Harriet Dierks",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef410e257",
+          "name": "Sophia Gregg Arlt",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef410f352",
+          "name": "Sofia Ghezzo Leal",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef41103fe",
+          "name": "Mar\u00eda Helga Gu\u00f0johnsen Sedlacek",
+          "size": "1000",
+          "slug": "communication_design_ba"
+        },
+        {
+          "id": "60d2ef4110be9",
+          "name": "Communication Design B.A",
+          "slug": "communication_design_ba",
+          "size": "8000",
+          "parent": true
+        }
+      ],
+      "term": true
+    },
+    {
+      "name": "Film & Motion Design B.A",
+      "children": [
+        {
+          "id": "60d2ef41273f8",
+          "name": "Dorothea Sophie Franz",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef41286da",
+          "name": "Zuzanna Poloczek",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4129878",
+          "name": "Michelle Sitko",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef412a90b",
+          "name": "Lia Wortelker",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef412ba47",
+          "name": "Nick Brinkmeyer",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef412cb93",
+          "name": "Anton Kr\u00fcmpelmann",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef412de2c",
+          "name": "Lisa Philipp",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef412ed3c",
+          "name": "Juliana Rainer",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef412f7ba",
+          "name": "Juan S. Unda",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef41309c7",
+          "name": "Till Sommer",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4131f2a",
+          "name": "Salom\u00e9 Wagner",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4133286",
+          "name": "Benno Blome",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4134397",
+          "name": "Leon Herres",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4135549",
+          "name": "Aaron Hagen",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4136957",
+          "name": "Nora Friese",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef41379ed",
+          "name": "Gary Emekwa",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4138ad4",
+          "name": "Linus Eckel",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4139c1e",
+          "name": "Dominik Bade",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef413b21c",
+          "name": "Samuel Baum",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef413be03",
+          "name": "Manuel Sebastian Tozzi",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef413ca18",
+          "name": "Sven Miller",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef413dc05",
+          "name": "S\u00f6ren Betker",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef413ee2b",
+          "name": "Nils Ecke",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef413ff2d",
+          "name": "Yiqi Yang",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4140e58",
+          "name": "Jan Moritz Mueller",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef414205e",
+          "name": "Eva B\u00f6ttcher",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4142fbb",
+          "name": "Gina Stephan",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4143d7b",
+          "name": "Jana Alessandra Moritz",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef41449f1",
+          "name": "Ties Kozok",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef41459e2",
+          "name": "Laura Gilich",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4146b48",
+          "name": "Sarafina H\u00fcsgen",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4147c69",
+          "name": "Philipp Quast",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4148a3e",
+          "name": "Joey-Dean Woo-Ling",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef41497e5",
+          "name": "Tiffany Justo Chaves",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef414a778",
+          "name": "Thamina Rastagar",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef414b63e",
+          "name": "Tobias Schneider",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef414c42b",
+          "name": "Aline Baumann",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef414d1c9",
+          "name": "Ann-Marie Wittig",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef414de0f",
+          "name": "Jo\u00e3o Paulo Comazzi Lemos de Oliveira",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef414ee4f",
+          "name": "Liesa Schulz",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef414fbe6",
+          "name": "Karl C\u00e4sar Gieth",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4150c52",
+          "name": "Katharina Kaufmann",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4151cb6",
+          "name": "Insa Vollert",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4152fb6",
+          "name": "Kevin Lausen",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4153fbe",
+          "name": "Nadin Heinke",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4154f6d",
+          "name": "Lino Thaesler",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4155fc8",
+          "name": "Fabian Beneking",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4157100",
+          "name": "Robin Aldag",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef41582cc",
+          "name": "Bahar G\u00f6zmener",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4159479",
+          "name": "Elena Rix",
+          "size": "1000",
+          "slug": "film_motion_design_ba"
+        },
+        {
+          "id": "60d2ef4159b69",
+          "name": "Film & Motion Design B.A",
+          "slug": "film_motion_design_ba",
+          "size": "8000",
+          "parent": true
+        }
+      ],
+      "term": true
+    },
+    {
+      "name": "Game Design B.A",
+      "children": [
+        {
+          "id": "60d2ef4164d85",
+          "name": "Kristina Pelz",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4165dfb",
+          "name": "Kay Seifert",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4167343",
+          "name": "Bianca Melissa R\u00fchr Levy",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4168263",
+          "name": "Laurie Bujnowski",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4169339",
+          "name": "Benjamin Grill",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef416a0a6",
+          "name": "Sarah Junger",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef416b323",
+          "name": "Nikolas Joshua Klein",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef416c2bf",
+          "name": "Mehtap Kurucay",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef416d961",
+          "name": "Sam Luckhardt",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef416ee45",
+          "name": "Alexander von Anhalt",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef416ffb0",
+          "name": "Lucas B\u00f6deker",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef417104a",
+          "name": "Max Bredlau",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef41720b9",
+          "name": "Hanna Borbola",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4173422",
+          "name": "Annika Heilmann",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef41744ea",
+          "name": "Julia Hein",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4175366",
+          "name": "Hannah Sophie Pollow",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4176045",
+          "name": "Onur \u00d6zkan",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4176d96",
+          "name": "Nino Brugger",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4177c7e",
+          "name": "Konstantin Kallus, Erik L\u00f3pez Gerner, Katherine Puga Tiedemann",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef4178a0a",
+          "name": "Carola Beatriz Brozio, Christopher Etmer, Roxana Rahmlow, Max Tromlitz",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef41795f8",
+          "name": "Leonie Sophia Kreitz",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef417a423",
+          "name": "Adrian Vincent K\u00f6hlmoos",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef417b510",
+          "name": "Carlo di Paolo",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef417c6b0",
+          "name": "Daniel Stoerbrauck",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef417db81",
+          "name": "Jana Stoerbrauck",
+          "size": "1000",
+          "slug": "game_design_ba"
+        },
+        {
+          "id": "60d2ef417e2cb",
+          "name": "Game Design B.A",
+          "slug": "game_design_ba",
+          "size": "8000",
+          "parent": true
+        }
+      ],
+      "term": true
+    },
+    {
+      "name": "Illustration B.A",
+      "children": [
+        {
+          "id": "60d2ef4194f9c",
+          "name": "Jan Minhoff",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41962b6",
+          "name": "Julina Nishimine",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41977cb",
+          "name": "Myriam Rathfelder",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef4198b1a",
+          "name": "Niklas Pfeifer",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef4199d6d",
+          "name": "Julia Schmidt",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef419b9eb",
+          "name": "Justin Sachs",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef419ce31",
+          "name": "Anna-Lena Spethmann",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef419e63b",
+          "name": "Lukas Tietkens",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef419f706",
+          "name": "Kim Hoffmann",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41a0e05",
+          "name": "Natalia Kammenou",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41a215a",
+          "name": "Isabell Kirste",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41a32d3",
+          "name": "Lena Kremp",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41a47c8",
+          "name": "Anna Nahr",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41a5bc5",
+          "name": "Gema Parejo-Martin",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41a6f15",
+          "name": "Julia Nurit Sch\u00f6nnagel",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41a7ee1",
+          "name": "Anna Louise Rudolph",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41a9142",
+          "name": "Charlotte Ramsbrock",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41aab0f",
+          "name": "Marlene Sch\u00e4fer",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41ac365",
+          "name": "Melina Sabalioti",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41ad783",
+          "name": "Bernadette Schweihoff",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41ae9d5",
+          "name": "Janina Sturm",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41af4de",
+          "name": "Catherina Gronemeyer",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41b0c7b",
+          "name": "Jekaterina Dibanina",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41b2152",
+          "name": "Jenny M\u00fcller",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41b33a3",
+          "name": "Marlene Binder",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41b4859",
+          "name": "Hannah Luisa Krieg",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41b5c0a",
+          "name": "Ines Golub",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41b6f5f",
+          "name": "Franziska Frahm",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41b84e2",
+          "name": "Cora Foitzik",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41b9a31",
+          "name": "Shaowei Deng",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41bad1e",
+          "name": "Khira Niemeier",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41bbf75",
+          "name": "Marius Tartler",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41bd24c",
+          "name": "Jiajia Li",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41be134",
+          "name": "Sophie Nyncke",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41bf2a5",
+          "name": "Lena Goral",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c04da",
+          "name": "Lea Berm\u00fchler",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c15c4",
+          "name": "Nadja Mai-Reis",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c25ea",
+          "name": "Naomi Iris Lehnen",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c3498",
+          "name": "Lennart Menkhaus",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c43f9",
+          "name": "Irini Georgiadu",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c507d",
+          "name": "Vivien Schmidt",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c5db9",
+          "name": "Anne-Sophie Engelhardt",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c6b80",
+          "name": "Olivia Lafabrie",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c792f",
+          "name": "Laura Nickel",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c87b2",
+          "name": "Angelie Koerner",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41c9685",
+          "name": "Wen Shi",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41ca432",
+          "name": "Anja M\u00f6hricke",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41cb180",
+          "name": "Florentine Klinzing",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41cbfd6",
+          "name": "Ayla Hentges",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41cd168",
+          "name": "Marcel Reinach",
+          "size": "1000",
+          "slug": "illustration_ba"
+        },
+        {
+          "id": "60d2ef41cd809",
+          "name": "Illustration B.A",
+          "slug": "illustration_ba",
+          "size": "8000",
+          "parent": true
+        }
+      ],
+      "term": true
+    },
+    {
+      "name": "Photography B.A",
+      "children": [
+        {
+          "id": "60d2ef41e3f6d",
+          "name": "Luca Ottmann",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41e550f",
+          "name": "Joshua H Phelps",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41e6a20",
+          "name": "Max Arens",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41e7b23",
+          "name": "Ragna Arndt-Maric",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41e8bfe",
+          "name": "Tessa Bozek",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41e9f69",
+          "name": "Catharina Fischer",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41eb051",
+          "name": "Gabrille Fougerousse",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41ebe41",
+          "name": "Leon Hahn",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41ed17c",
+          "name": "Wei Li",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41ee1ef",
+          "name": "Moritz Marzi",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41ef237",
+          "name": "Thao Linh Nguyen",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41f02d5",
+          "name": "German Palomeque",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41f13d0",
+          "name": "Marvin Remlinger",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41f252a",
+          "name": "Niloofar Shafigh Nedamani",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef41f3692",
+          "name": "Jessica Souza Povoa",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef42005db",
+          "name": "Denise Tombers",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4201868",
+          "name": "Phillip Helmke",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4202e31",
+          "name": "Moses Omeogo",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef42043ac",
+          "name": "Bryan Ravenborg",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4205a26",
+          "name": "Oxana Salzmann",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4206eb9",
+          "name": "Mario Horto",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef42083cf",
+          "name": "Dominique Bulthuis",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef42099c8",
+          "name": "Ellie Brown",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef420af96",
+          "name": "Lada Suomenrinne",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef420c46c",
+          "name": "Kate\u0159ina Kabelkov\u00e1",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef420d892",
+          "name": "Michail Ioannidis",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef420e9cf",
+          "name": "Kimia Kazemi",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef421018b",
+          "name": "Isabell Kessler",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4211af8",
+          "name": "Anna Krenkel",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4213d4c",
+          "name": "Eric M\u00fchle",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4214fe8",
+          "name": "Carmen Mayr",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef421662c",
+          "name": "L\u00e6rke Lauesen",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4217b18",
+          "name": "Sarah Paff",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef42194fc",
+          "name": "Natascha Christina Petersen",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef421aab1",
+          "name": "Celine Nguyen",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef421bdc5",
+          "name": "Lucrezia Rossi",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef421d435",
+          "name": "Farida Soliman",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef421ee96",
+          "name": "Eileen Wingaard Sj\u00f8qvist",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4220390",
+          "name": "G\u00f6k\u00e7en Kavuk",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4221d59",
+          "name": "Alex Harbich",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4222c88",
+          "name": "Hannah Brandes",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef42240d3",
+          "name": "Sophia K\u00fchle",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef42257e1",
+          "name": "Nancy Klauner",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4227cd4",
+          "name": "David Kern",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef4229302",
+          "name": "Bea Rodrigues",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef422aa99",
+          "name": "Lissy Gollnik",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef422ba9c",
+          "name": "Adam Blaufarb",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef422c851",
+          "name": "Merle B\u00fcttner",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef422d503",
+          "name": "Jasmin Steidl",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef422e580",
+          "name": "Ece Merve Terzi",
+          "size": "1000",
+          "slug": "photography_ba"
+        },
+        {
+          "id": "60d2ef422ec4f",
+          "name": "Photography B.A",
+          "slug": "photography_ba",
+          "size": "8000",
+          "parent": true
+        }
+      ],
+      "term": true
+    }
+  ]
+}
