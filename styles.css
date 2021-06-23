@@ -26,10 +26,6 @@ img {
     stroke-width: 2px;
 }
 
-.node:not(.node--root):hover {
-    stroke: black;
-}
-
 .node--parent img {
     display: none;
     object-fit: cover;
