@@ -27,7 +27,7 @@ img {
 }
 
 .node:not(.node--root):hover {
-    sroke: black;
+    stroke: black;
 }
 
 .node--parent img {
