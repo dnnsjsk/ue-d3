@@ -25,17 +25,6 @@ window.addEventListener('resize', function () {
 });
 
 /**
- * Color.
- */
-/*
-const color = d3
-  .scaleLinear()
-  .domain([-1, 5])
-  .range(['hsl(150,53%,88%)', 'hsl(228,30%,40%)'])
-  .interpolate(d3.interpolateHcl);
-*/
-
-/**
  * Pack it.
  */
 const pack = d3
@@ -94,18 +83,7 @@ d3.json(
                             : ''
                     }`
                 : 'node node--root';
-        })
-        /*
-        .style('fill', function (d) {
-          return d.children ? color(d.depth) : null;
-        })
-        .on('click', function (event, d) {
-            if (focus !== d) {
-                zoom(d);
-                event.stopPropagation();
-            }
         });
-         */
 
     /**
      * Objects.
@@ -139,39 +117,10 @@ d3.json(
     });
 
     /**
-     * Text.
-     */
-    /*
-    const text = g
-      .selectAll('text')
-      .data(nodes)
-      .enter()
-      .append('text')
-      .attr('class', 'label')
-      .style('fill-opacity', function (d) {
-        return d.parent === root ? 1 : 0;
-      })
-      .style('display', function (d) {
-        return d.parent === root ? 'inline' : 'none';
-      })
-      .text(function (d) {
-        return d.data.name;
-      });
-     */
-
-    /**
      * Other.
      */
     const node = g.selectAll('circle,text,foreignObject');
-
-    /*
-    svg.on('click', function () {
-        zoom(root);
-    });
-     */
-
     zoomTo([root.x, root.y, root.r * 2 + margin]);
-    document.body.classList.add('is-out');
 
     /**
      * Zoom.
@@ -195,29 +144,6 @@ d3.json(
                     zoomTo(i(t));
                 };
             });
-
-        /*
-        transition
-          .selectAll('text')
-          .filter(function (d) {
-            return d.parent === focus || this.style.display === 'inline';
-          })
-          .style('fill-opacity', function (d) {
-            return d.parent === focus ? 1 : 0;
-          })
-          .on('start', function (d) {
-            if (d.parent === focus) {
-              document.body.classList.remove('is-in');
-              document.body.classList.add('is-out');
-            }
-          })
-          .on('end', function (d) {
-            if (d.parent !== focus) {
-              document.body.classList.remove('is-out');
-              document.body.classList.add('is-in');
-            }
-          });
-          */
     }
 
     /**
