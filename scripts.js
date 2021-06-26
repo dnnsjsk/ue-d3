@@ -7,11 +7,11 @@ const svg = d3
     .attr('viewBox', '0 0 960 960')
     .attr('perserveAspectRatio', 'xMinYMid')
     .attr('width', window.innerWidth)
-    .attr('height', window.innerHeight);
+    .attr('height', window.innerHeight)
+    
 const margin = 20;
 const g = svg
     .append('g')
-    .attr('transform', 'translate(' + diameter / 2 + ',' + diameter / 2 + ')');
 
 const transform = d3.zoomIdentity.translate(diameter / 2, diameter / 2);
 
@@ -23,6 +23,7 @@ window.addEventListener('resize', function () {
         .attr('width', window.innerWidth)
         .attr('height', window.innerHeight);
 });
+
 
 /**
  * Pack it.
@@ -43,6 +44,21 @@ d3.json(
         }
     }
 ).then(function (root) {
+    // Finding nodes suitable for zooming in
+    svg.on('click', (event) => {
+        const nodes = document.elementsFromPoint(...d3.pointer(event, g))
+        .filter(zoomFilter)
+        .sort((a, b) => b.getBoundingClientRect().width - a.getBoundingClientRect().width)
+
+        nodes.length && zoom(d3.select(nodes[0]), event)
+    })
+
+    // Filter of nodes available for zoom in
+    function zoomFilter (v) {
+        return (v.classList.contains('node--parent') || v.classList.contains('node--leaf'))
+        && v.getBoundingClientRect().width < Math.min(svg.node().clientWidth, svg.node().clientHeight)
+    }
+
     /**
      * Sort stuff.
      */
@@ -83,8 +99,11 @@ d3.json(
                             : ''
                     }`
                 : 'node node--root';
-        });
-
+        })
+        .attr('cx', d => d.x - diameter / 2)
+        .attr('cy', d => d.y - diameter / 2)
+        .attr('r', d => d.r)
+        
     /**
      * Objects.
      */
@@ -106,7 +125,11 @@ d3.json(
         })
         .attr('data-id', function (d) {
             return d.data.id;
-        });
+        })
+        .attr('x', d => d.x - diameter / 2 - d.r)
+        .attr('y', d => d.y - diameter / 2 - d.r)
+        .attr('width', d => d.r * 2)
+        .attr('height', d => d.r * 2)
 
     objects.append('xhtml:img').attr('src', function (d) {
         return 'https://source.unsplash.com/random';
@@ -120,59 +143,35 @@ d3.json(
      * Other.
      */
     const node = g.selectAll('circle,text,foreignObject');
-    zoomTo([root.x, root.y, root.r * 2 + margin]);
-
-    /**
-     * Zoom.
-     */
-    function zoom(d) {
-        focus = d;
-
-        d3.transition()
-            .duration(750)
-            .tween('zoom', function (d) {
-                const i = d3.interpolateZoom(view, [
-                    focus.x,
-                    focus.y,
-                    focus.r * 2 + margin,
-                ]);
-                return function (t) {
-                    g.attr(
-                        'transform',
-                        'translate(' + diameter / 2 + ',' + diameter / 2 + ')'
-                    );
-                    zoomTo(i(t));
-                };
-            });
-    }
+    // zoomTo([root.x, root.y, root.r * 2 + margin]);
 
     /**
      * Zoom to.
      */
-    function zoomTo(v) {
-        const k = diameter / v[2];
-        view = v;
-        node.attr('transform', function (d) {
-            return 'translate(' + (d.x - v[0]) * k + ',' + (d.y - v[1]) * k + ')';
-        });
-        circle.attr('r', function (d) {
-            return d.r * k;
-        });
-        objects.each(function () {
-            d3.select(this).attr('x', function (d) {
-                return '-' + d.r * k;
-            });
-            d3.select(this).attr('y', function (d) {
-                return '-' + d.r * k;
-            });
-            d3.select(this).attr('width', function (d) {
-                return d.r * 2 * k;
-            });
-            d3.select(this).attr('height', function (d) {
-                return d.r * 2 * k;
-            });
-        });
-    }
+    // function zoomTo(v) {
+    //     const k = diameter / v[2];
+    //     view = v;
+    //     node.attr('transform', function (d) {
+    //         return 'translate(' + (d.x - v[0]) * k + ',' + (d.y - v[1]) * k + ')';
+    //     });
+    //     circle.attr('r', function (d) {
+    //         return d.r * k;
+    //     });
+    //     objects.each(function () {
+    //         d3.select(this).attr('x', function (d) {
+    //             return '-' + d.r * k;
+    //         });
+    //         d3.select(this).attr('y', function (d) {
+    //             return '-' + d.r * k;
+    //         });
+    //         d3.select(this).attr('width', function (d) {
+    //             return d.r * 2 * k;
+    //         });
+    //         d3.select(this).attr('height', function (d) {
+    //             return d.r * 2 * k;
+    //         });
+    //     });
+    // }
 
     /**
      * Mouse zoom functionality.
@@ -183,6 +182,27 @@ d3.json(
         .on('zoom', function (event) {
             svg.selectAll('g').attr('transform', event.transform);
         });
+
+
+    function zoom(target, event) {
+        const width = diameter
+        const height = diameter
+        const d = target.datum()
+
+        const x0 = d.x,
+            y0 = d.y,
+            x1 = d.x + d.r * 2,
+            y1 = d.y + d.r * 2
+
+        svg.transition().duration(750).call(
+          zoomMouse.transform,
+          d3.zoomIdentity
+            .translate(width / 2, height / 2)
+            .scale(1 / Math.min((x1 - x0) / width, (y1 - y0) / height))
+            .translate(-x0 + width / 2, -y0 + height / 2),
+          d3.pointer(event, svg.node())
+        );
+    }
 
     svg.call(zoomMouse).call(zoomMouse.transform, transform);
 });
