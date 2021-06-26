@@ -50,14 +50,17 @@ d3.json(
         .filter(zoomFilter)
         .sort((a, b) => b.getBoundingClientRect().width - a.getBoundingClientRect().width)
 
-        nodes.length && zoom(d3.select(nodes[0]), event)
+        nodes.length && zoom(d3.select(nodes[0]).datum())
     })
 
     // Filter of nodes available for zoom in
     function zoomFilter (v) {
+        const {clientWidth:w, clientHeight:h} = svg.node()
         return (v.classList.contains('node--parent') || v.classList.contains('node--leaf'))
-        && v.getBoundingClientRect().width < Math.min(svg.node().clientWidth, svg.node().clientHeight)
+        && v.getBoundingClientRect().width < Math.min(w, h)
     }
+
+
 
     /**
      * Sort stuff.
@@ -178,29 +181,25 @@ d3.json(
      */
     const zoomMouse = d3
         .zoom()
-        .scaleExtent([1, 8])
+        .scaleExtent([1, 100])
         .on('zoom', function (event) {
             svg.selectAll('g').attr('transform', event.transform);
         });
 
 
-    function zoom(target, event) {
-        const width = diameter
-        const height = diameter
-        const d = target.datum()
+    function zoom(d) {
 
         const x0 = d.x,
-            y0 = d.y,
-            x1 = d.x + d.r * 2,
-            y1 = d.y + d.r * 2
+                y0 = d.y,
+                x1 = d.x + d.r * 2,
+                y1 = d.y + d.r * 2
 
         svg.transition().duration(750).call(
           zoomMouse.transform,
           d3.zoomIdentity
-            .translate(width / 2, height / 2)
-            .scale(1 / Math.min((x1 - x0) / width, (y1 - y0) / height))
-            .translate(-x0 + width / 2, -y0 + height / 2),
-          d3.pointer(event, svg.node())
+            .translate(diameter / 2, diameter / 2)
+            .scale(1 / Math.min((x1 - x0) / diameter, (y1 - y0) / diameter))
+            .translate(-x0 + diameter / 2, -y0 + diameter / 2)
         );
     }
 
