@@ -40,19 +40,19 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
 }).then(function (root) {
   // Looking for nodes suitable for zooming in
   svg.on('click', (event) => {
-    const nodes = d3
-      .selectAll(
-        document.elementsFromPoint(...d3.pointer(event, g)).sort(sortBySize)
-      )
-      .filter('.node--parent, .node--leaf')
-      .filter(zoomFilter)
-
+    const nodes = nodesFromPoint(...d3.pointer(event, g), sortBySize).filter(zoomFilter)
     zoom(nodes.size() && nodes.datum())
   })
 
   // Sorts items in decreasing order of size
   function sortBySize(elA, elB) {
     return elA.getBoundingClientRect().width - elB.getBoundingClientRect().width
+  }
+
+  function nodesFromPoint(x, y, sortFunction = null) {
+    return d3.selectAll(
+      document.elementsFromPoint(x, y).sort(sortFunction)
+    ).filter('.node--parent, .node--leaf')
   }
 
   // Filter of nodes available for zoom in
@@ -74,13 +74,7 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
         width: viewW,
         height: viewH,
       } = svg.node().getBoundingClientRect()
-      const nodes = d3
-        .selectAll(
-          document
-            .elementsFromPoint(viewX + viewW / 2, viewY + viewH / 2)
-            .sort(sortBySize)
-        )
-        .filter('.node--parent, .node--leaf')
+      const nodes = nodesFromPoint(viewX + viewW / 2, viewY + viewH / 2, sortBySize)
         .select(function () {
           const { width } = this.getBoundingClientRect()
           return width > Math.min(viewW, viewH) ? this : null
