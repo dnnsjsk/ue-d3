@@ -1,8 +1,0 @@
-{
-  "root": "public_html",
-  "headers": {
-    "/**": {
-      "Cache-Control": "no-store, no-cache"
-    }
-  }
-}
