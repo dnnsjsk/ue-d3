@@ -104,21 +104,34 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
   setFocus(root)
   const nodes = pack(root).descendants()
   
-  function setFocus(value) {
+  function setFocus(node) {
     if (focus) {
       document.querySelector('body').classList.toggle(getClassName(focus), false)
     }
 
-    if (value && value.depth > 1) {
-      document.querySelector('body').classList.toggle(getClassName(value), true)
+    if (getTopNode(node)) {
+      document.querySelector('body').classList.toggle(getClassName(getTopNode(node)), true)
     }
-    
-    focus = value || root
+
+    focus = node || root
   }
 
   // Returns node name to use as class name
   function getClassName (node) {
    return node?.data?.name?.replace(/(^\d+)|(\W+)/g, '_$1')
+  }
+
+  // Returns top circle for any node
+  function getTopNode (node) {
+    if (!node.depth) {
+      return null
+    }
+
+    while (node.depth > 1) {
+      node = node.parent
+    }
+
+    return node
   }
 
   /**
