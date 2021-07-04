@@ -57,37 +57,32 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
       .filter('.node--parent, .node--leaf')
   }
 
-  // Filter of nodes available for zoom in
+  // Filter of nodes available for zoom in.
   function zoomFilter(d) {
-    const reference = getRefNode()
     return (
-      d.parent === reference ||
-      d.parent === reference.parent ||
-      d === reference.parent
+      d.parent === focus ||
+      d.parent === focus.parent ||
+      d === focus.parent
     )
   }
 
-  // Gives focus or searches for a node considered as focus
+  // Gives focus or searches for a node considered as focus.
   function getRefNode() {
-    if (!focus) {
-      const {
-        x: viewX,
-        y: viewY,
-        width: viewW,
-        height: viewH,
-      } = svg.node().getBoundingClientRect()
-      const nodes = nodesFromPoint(
-        viewX + viewW / 2,
-        viewY + viewH / 2,
-        sortBySize
-      ).select(function () {
-        const { width } = this.getBoundingClientRect()
-        return width > Math.min(viewW, viewH) ? this : null
-      })
-      return nodes.size() ? nodes.datum() : root
-    }
-
-    return focus
+    const {
+      x: viewX,
+      y: viewY,
+      width: viewW,
+      height: viewH,
+    } = svg.node().getBoundingClientRect()
+    const nodes = nodesFromPoint(
+      viewX + viewW / 2,
+      viewY + viewH / 2,
+      sortBySize
+    ).select(function () {
+      const { width } = this.getBoundingClientRect()
+      return width > Math.min(viewW, viewH) ? this : null
+    })
+    return nodes.size() ? nodes.datum() : root
   }
 
   /**
@@ -105,9 +100,39 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
   /**
    * Setup.
    */
-  let focus = root
-  let view
+  let focus
+  setFocus(root)
   const nodes = pack(root).descendants()
+  
+  function setFocus(node) {
+    if (focus) {
+      document.querySelector('body').classList.toggle(getClassName(focus), false)
+    }
+
+    if (getTopNode(node)) {
+      document.querySelector('body').classList.toggle(getClassName(getTopNode(node)), true)
+    }
+
+    focus = node || root
+  }
+
+  // Returns node name to use as class name
+  function getClassName (node) {
+   return node?.data?.name?.replace(/(^\d+)|(\W+)/g, '_$1')
+  }
+
+  // Returns top circle for any node
+  function getTopNode (node) {
+    if (!node.depth) {
+      return null
+    }
+
+    while (node.depth > 1) {
+      node = node.parent
+    }
+
+    return node
+  }
 
   /**
    * Circles.
@@ -125,7 +150,7 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
         ? d.children
           ? 'node node--parent'
           : `node node--leaf ${
-              d.data.slug ? d.data.slug.toLowerCase().replaceAll('_', '-') : ''
+              d.data.slug ? d.data.slug.toLowerCase() : ''
             }`
         : 'node node--root'
     })
@@ -169,40 +194,6 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
   })
 
   /**
-   * Other.
-   */
-  const node = g.selectAll('circle,text,foreignObject')
-  // zoomTo([root.x, root.y, root.r * 2 + margin]);
-
-  /**
-   * Zoom to.
-   */
-  // function zoomTo(v) {
-  //     const k = diameter / v[2];
-  //     view = v;
-  //     node.attr('transform', function (d) {
-  //         return 'translate(' + (d.x - v[0]) * k + ',' + (d.y - v[1]) * k + ')';
-  //     });
-  //     circle.attr('r', function (d) {
-  //         return d.r * k;
-  //     });
-  //     objects.each(function () {
-  //         d3.select(this).attr('x', function (d) {
-  //             return '-' + d.r * k;
-  //         });
-  //         d3.select(this).attr('y', function (d) {
-  //             return '-' + d.r * k;
-  //         });
-  //         d3.select(this).attr('width', function (d) {
-  //             return d.r * 2 * k;
-  //         });
-  //         d3.select(this).attr('height', function (d) {
-  //             return d.r * 2 * k;
-  //         });
-  //     });
-  // }
-
-  /**
    * Mouse zoom functionality.
    */
   const zoomMouse = d3
@@ -211,14 +202,14 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
     .on('zoom', (event) => {
       svg.selectAll('g').attr('transform', event.transform)
 
-      // Resets the focus if the user changes the zoom manually
+      // Finds and set the focus if the user changes the zoom manually.
       if (event.sourceEvent) {
-        focus = null
+        setFocus(getRefNode())
       }
     })
 
   function zoom(d) {
-    focus = d
+    setFocus(d)
 
     svg
       .transition()
@@ -226,7 +217,7 @@ d3.json('https://api.jsonbin.io/b/60d2e88a8a4cd025b7a3b932/2', {
       .call(zoomMouse.transform, getZoomTransform(d))
   }
 
-  // Returns the transformation object corresponding to the node or the initial transform if there is no argument
+  // Returns the transformation object corresponding to the node or the initial transform if there is no argument.
   function getZoomTransform(d) {
     if (d) {
       const x0 = d.x,
